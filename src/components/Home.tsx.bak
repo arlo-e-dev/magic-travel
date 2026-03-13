@@ -1,0 +1,167 @@
+import { Link } from 'react-router-dom';
+
+function Home() {
+  return (
+    <div className="home">
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-content">
+          <h2>Curated Women-Only Getaways</h2>
+          <p>Transformative travel experiences designed exclusively for Russian women to explore, connect, and thrive together. Curated by Yuliya Makhnina with passion and care.</p>
+          <div className="cta-buttons">
+            <Link to="/trips" className="btn primary">View Upcoming Trips</Link>
+            <Link to="/destinations" className="btn secondary">Explore Destinations</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="how-it-works">
+        <div className="container">
+          <h2>How Magic Travel Works</h2>
+          <div className="steps">
+            <div className="step">
+              <div className="step-number">1</div>
+              <h3>Curated Experiences</h3>
+              <p>Each journey is thoughtfully crafted by Yuliya to balance adventure with wellness, culture with connection, and group activities with personal reflection time.</p>
+            </div>
+            <div className="step">
+              <div className="step-number">2</div>
+              <h3>Sisterhood First</h3>
+              <p>Join a intimate group of like-minded Russian women who share your values and passion for meaningful travel experiences that go beyond typical tourism.</p>
+            </div>
+            <div className="step">
+              <div className="step-number">3</div>
+              <h3>Transformation Guaranteed</h3>
+              <p>Return home with more than just photos - new perspectives, deeper connections, and a renewed sense of confidence and adventure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Destinations */}
+      <section className="featured-destinations">
+        <div className="container">
+          <h2>Featured Destinations</h2>
+          <div className="destination-grid">
+            <div className="destination-card">
+              <div className="placeholder-image">Bali</div>
+              <div className="card-content">
+                <h3>Bali Retreat</h3>
+                <p>Experience the spiritual beauty and vibrant culture of Bali with our intimate women-focused group journey</p>
+                <Link to="/destinations/bali" className="btn secondary small">Discover Bali</Link>
+              </div>
+            </div>
+            <div className="destination-card">
+              <div className="placeholder-image">Turkey</div>
+              <div className="card-content">
+                <h3>Turkey Adventure</h3>
+                <p>Discover the ancient wonders and vibrant bazaars of Turkey through our thoughtfully curated cultural journey</p>
+                <Link to="/destinations/turkey" className="btn secondary small">Explore Turkey</Link>
+              </div>
+            </div>
+            <div className="destination-card">
+              <div className="placeholder-image">Vegas</div>
+              <div className="card-content">
+                <h3>Vegas Getaway</h3>
+                <p>Experience the excitement of Las Vegas with like-minded women in our exclusive group retreat</p>
+                <Link to="/destinations/las-vegas" className="btn secondary small">Experience Vegas</Link>
+              </div>
+            </div>
+            <div className="destination-card">
+              <div className="placeholder-image">JT</div>
+              <div className="card-content">
+                <h3>Joshua Tree</h3>
+                <p>Find serenity and reconnect with nature in the stunning desert landscapes of Joshua Tree National Park</p>
+                <Link to="/destinations/joshua-tree" className="btn secondary small">Serenity Awaits</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hosted Getaways */}
+      <section className="hosted-getaways">
+        <div className="container">
+          <h2>Upcoming Group Getaways</h2>
+          <div className="trip-grid">
+            <div className="trip-card">
+              <div className="placeholder-image">Florida</div>
+              <div className="card-content">
+                <h3>Florida Keys Escape</h3>
+                <p>Relax and rejuvenate on the pristine beaches of the Florida Keys in our intimate women's retreat</p>
+                <div className="trip-meta">
+                  <span className="dates">May 15-22, 2026</span>
+                  <span className="price">From $1,499</span>
+                </div>
+                <Link to="/trips/florida" className="btn primary small">View Details</Link>
+              </div>
+            </div>
+            <div className="trip-card">
+              <div className="placeholder-image">Tahoe</div>
+              <div className="card-content">
+                <h3>Lake Tahoe Adventure</h3>
+                <p>Experience the breathtaking beauty of Lake Tahoe with outdoor activities and wellness experiences</p>
+                <div className="trip-meta">
+                  <span className="dates">June 8-15, 2026</span>
+                  <span className="price">From $1,899</span>
+                </div>
+                <Link to="/trips/lake-tahoe" className="btn primary small">View Details</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="testimonials">
+        <div className="container">
+          <h2>What Our Travelers Say</h2>
+          <div className="testimonial-grid">
+            <div className="testimonial">
+              <p>"Yuliya's thoughtful planning made all the difference. Every moment felt intentional and magical. I returned home with new friends and a renewed sense of adventure!"</p>
+              <p className="author">- Anna, Moscow</p>
+            </div>
+            <div className="testimonial">
+              <p>"The sisterhood we built was truly transformative. Yuliya created a safe space where we could be vulnerable, adventurous, and authentic. Life-changing experience!"</p>
+              <p className="author">- Katya, St. Petersburg</p>
+            </div>
+            <div className="testimonial">
+              <p>"As a solo traveler, I was skeptical about group trips. Yuliya proved me wrong! Her curated experiences struck the perfect balance of adventure, relaxation, and meaningful connection."</p>
+              <p className="author">- Daria, Kazan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Teaser */}
+      <section className="about-teaser">
+        <div className="container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2>Meet Yuliya Makhnina</h2>
+              <p>With over a decade of global travel experience, I've created Magic Travel to empower Russian women to explore the world with confidence, joy, and authentic connection.</p>
+              <p>My mission is to craft transformative journeys where every detail is thoughtfully considered - from the perfect group dynamics to the most meaningful cultural experiences. I believe travel has the power to change lives when shared with the right people in the right way.</p>
+              <Link to="/about" className="btn secondary">Learn My Story</Link>
+            </div>
+            <div className="placeholder-image large">Yuliya</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="final-cta">
+        <div className="container">
+          <h2>Ready for Your Next Adventure?</h2>
+          <p>Join our intimate community of women travelers and experience the magic of thoughtfully curated group journeys with Yuliya</p>
+          <div className="cta-buttons">
+            <Link to="/trips" className="btn primary">View All Trips</Link>
+            <Link to="/contact" className="btn secondary">Get in Touch</Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Home;

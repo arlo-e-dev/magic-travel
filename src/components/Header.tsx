@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import '../App.css';
 
 function Header() {
   return (
@@ -9,12 +10,12 @@ function Header() {
         </Link>
         <nav>
           <ul>
-            <li><NavLink to="/" end>Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/destinations">Destinations</NavLink></li>
-            <li><NavLink to="/trips">Trips</NavLink></li>
-            <li><NavLink to="/blog">Blog</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
+            <li><NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About Yuliya</NavLink></li>
+            <li><NavLink to="/destinations" className={({ isActive }) => isActive ? "active" : ""}>Destinations</NavLink></li>
+            <li><NavLink to="/trips" className={({ isActive }) => isActive ? "active" : ""}>Journeys</NavLink></li>
+            <li><NavLink to="/blog" className={({ isActive }) => isActive ? "active" : ""}>Journal</NavLink></li>
+            <li><NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>Connect</NavLink></li>
           </ul>
         </nav>
       </div>

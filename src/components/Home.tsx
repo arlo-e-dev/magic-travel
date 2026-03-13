@@ -49,7 +49,7 @@ function Home() {
               <div className="card-content">
                 <h3>Bali Retreat</h3>
                 <p>Experience the beauty and culture of Bali with our women-focused group tour</p>
-                <Link to="/destinations" className="btn secondary small">Learn More</Link>
+                <Link to="/destinations/bali" className="btn secondary small">Learn More</Link>
               </div>
             </div>
             <div className="destination-card">
@@ -57,7 +57,7 @@ function Home() {
               <div className="card-content">
                 <h3>Turkey Adventure</h3>
                 <p>Discover the rich history and vibrant markets of Turkey</p>
-                <Link to="/destinations" className="btn secondary small">Learn More</Link>
+                <Link to="/destinations/turkey" className="btn secondary small">Learn More</Link>
               </div>
             </div>
             <div className="destination-card">
@@ -65,7 +65,7 @@ function Home() {
               <div className="card-content">
                 <h3>Vegas Getaway</h3>
                 <p>Experience the excitement of Las Vegas with like-minded women</p>
-                <Link to="/destinations" className="btn secondary small">Learn More</Link>
+                <Link to="/destinations/las-vegas" className="btn secondary small">Learn More</Link>
               </div>
             </div>
             <div className="destination-card">
@@ -73,7 +73,7 @@ function Home() {
               <div className="card-content">
                 <h3>Joshua Tree</h3>
                 <p>Find serenity in the desert landscapes of Joshua Tree National Park</p>
-                <Link to="/destinations" className="btn secondary small">Learn More</Link>
+                <Link to="/destinations/joshua-tree" className="btn secondary small">Learn More</Link>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ function Home() {
                   <span className="dates">May 15-22, 2026</span>
                   <span className="price">From $1,499</span>
                 </div>
-                <Link to="/trips" className="btn primary small">View Details</Link>
+                <Link to="/trips/florida" className="btn primary small">View Details</Link>
               </div>
             </div>
             <div className="trip-card">
@@ -106,7 +106,7 @@ function Home() {
                   <span className="dates">June 8-15, 2026</span>
                   <span className="price">From $1,899</span>
                 </div>
-                <Link to="/trips" className="btn primary small">View Details</Link>
+                <Link to="/trips/lake-tahoe" className="btn primary small">View Details</Link>
               </div>
             </div>
           </div>

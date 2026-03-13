@@ -480,15 +480,103 @@ footer {
 }
 
 /* Generic Page Styles */
-.about, .destinations, .trips, .blog, .contact, .privacy, .terms {
+.about, .destinations, .trips, .blog, .contact, .privacy, .terms, .destination-detail, .trip-detail {
   padding: 2rem 0;
 }
 
-.about h2, .destinations h2, .trips h2, .blog h2, .contact h2, .privacy h2, .terms h2 {
+.about h2, .destinations h2, .trips h2, .blog h2, .contact h2, .privacy h2, .terms h2, .destination-detail h2, .trip-detail h2 {
   text-align: center;
   margin-bottom: 2rem;
   color: #333;
   font-family: 'Playfair Display', serif;
+}
+
+/* Detail Page Styles */
+.destination-content, .trip-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.destination-highlights, .trip-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.highlight-card {
+  background: #f9f5ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.highlight-card h3 {
+  margin-top: 0;
+  color: #6a0dad;
+  font-family: 'Playfair Display', serif;
+}
+
+.highlight-card ul {
+  padding-left: 1.5rem;
+}
+
+.highlight-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.itinerary-section {
+  margin: 3rem 0;
+}
+
+.itinerary-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+.itinerary-day {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.itinerary-day h4 {
+  margin-top: 0;
+  color: #6a0dad;
+}
+
+.itinerary-day p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.call-to-action {
+  background: linear-gradient(135deg, #6a0dad 0%, #8a2be2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 3rem 0;
+  box-shadow: 0 10px 30px rgba(106, 13, 173, 0.2);
+}
+
+.call-to-action h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.call-to-action p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* About Page */

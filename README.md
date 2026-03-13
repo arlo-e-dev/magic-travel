@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Magic Travel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern static website for curated women-only getaway/travel experiences for Russian girls/women traveling together.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This website is built with:
+- React + TypeScript
+- Vite (for fast development and building)
+- React Router (for client-side routing)
+- CSS Modules (for styling)
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Destinations.tsx
+│   ├── Trips.tsx
+│   ├── Blog.tsx
+│   ├── Contact.tsx
+│   ├── Privacy.tsx
+│   └── Terms.tsx
+├── assets/
+│   ├── hero.png
+│   ├── react.svg
+│   └── vite.svg
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run the development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
+
+To build for production:
+
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is configured for GitHub Pages deployment. The build output is in the `dist/` directory.
+
+## Features
+
+- Responsive design
+- Modern UI with luxury/feminine travel branding
+- Client-side routing for navigation
+- Placeholder content for all main sections
+- Ready for GitHub Pages deployment
+
+## Pages
+
+1. Home (`/`) - Hero section, featured destinations, testimonials
+2. About (`/about`) - Yuliya's story and introduction
+3. Destinations (`/destinations`) - All featured destinations
+4. Trips (`/trips`) - Upcoming group trips
+5. Blog (`/blog`) - Travel stories and tips
+6. Contact (`/contact`) - Contact form and information
+7. Privacy Policy (`/privacy`) - Privacy policy page
+8. Terms (`/terms`) - Terms and conditions page
+
+## Branding
+
+- Primary color: Purple (`#6a0dad`)
+- Secondary colors: White, light grays
+- Fonts: Playfair Display (headings), Roboto (body)
